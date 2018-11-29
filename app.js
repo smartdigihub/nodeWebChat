@@ -46,7 +46,7 @@ io.on('connection', (socket)=>{
         if(username==''|| message==''){
             socket.emit('exception', {fielderr: errmsg});
         }else{
-            socket.emit('chat', data);
+            io.sockets.emit('chat', data);
         }
     });
 // get user is typing from client and emit to all clients except you
