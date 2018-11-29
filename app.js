@@ -4,7 +4,7 @@ const socketIO = require('socket.io');
 
 //create express server
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Serve static files in public folder
 app.use(express.static('public'));
