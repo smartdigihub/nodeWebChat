@@ -10,7 +10,14 @@ h2{
     padding: 10px 20px;
     color: #5357a8;
 }
+#output{
+    float: left;
+}
 
+#time{
+    float: right;
+    color: #555;
+}
 #my-chat{
     max-width: 600px;
     margin: 30px auto;

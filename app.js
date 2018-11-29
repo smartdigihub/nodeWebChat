@@ -36,7 +36,7 @@ io.on('connection', (socket)=>{
         //connections.splice(connections.indexOf(socket), 1);
         //console.clear();
         //console.log(`${connections.length} user(s) remaining`);
-        socket.emit('userCount', { userCount: userCount });
+        io.sockets.emit('userCount', { userCount: userCount });
     });
 // get data from client and emit it to all clients
     socket.on('chat', (data)=>{
